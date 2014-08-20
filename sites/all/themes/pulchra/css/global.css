@@ -1,0 +1,252 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* Typeography */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600);
+
+body {
+	color: white;
+}
+
+/*disables titles*/
+#page-title {
+display:none;
+}
+
+/*disables menus*/
+#main-menu{
+	display:none;
+}
+
+#zone-user{
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+/*the next two ID's are for the header social media icons */
+#block-imageblock-3 {
+    width : 30px; /* width here */
+    height : 30px; /* height here */
+    display: inline-block;
+	float:left;
+	clear:none;
+	list-style-type:none;
+	margin-left: 7em;
+	margin-right: 0.5em;
+}
+
+#block-imageblock-2{
+	width : 30px;
+	height : 30px;
+	display: inline-block;
+	float:left;
+	clear:none;
+	list-style-type:none;
+}
+
+
+
+.block.block-block.contextual-links-region.block-1.block-block-1.odd.block-without-title{
+	width : 260px;
+	height : 30px;
+	display: inline-block;
+	float:left;
+	clear:none;
+	list-style-type:none;
+}
+
+#block-block-1{
+	width : 260px;
+	height : 30px;
+	display: inline-block;
+	float:left;
+	clear:none;
+	list-style-type:none;
+}
+
+
+#block-block-2{
+	height: 10em;
+	margin-bottom: 4em;
+}
+
+.hero-text {
+	font-size: 6.8em;
+	color:white;
+	display: block;
+	text-align: center;
+}
+
+#block-imageblock-4 {
+	width: 10em;
+	height: 1em;
+}
+
+#block-imageblock-5{
+	width:10em;
+	height: 1px;
+}
+
+.block-body{
+	width:15em;
+	height: 1em;
+}
+
+#links{
+	font-size:0.9em;
+	border:1px solid white;
+	color:white;
+	text-align:center;
+	padding: 0.5em 0.5em 0.5em 0.5em
+}
+
+
+.view-content a {
+  text-decoration: none;
+  border: none;
+}
+
+.grid-7.prefix-5.region.region-menu {
+	display:none;
+	visibility: hidden;
+}
+
+.block.block-imageblock.contextual-links-region.block-8.even.block-without-title{
+	display:inline-block;
+	float: left;
+}
+
+.block.block-imageblock.contextual-links-region.block-6.even.block-without-title{
+	display:inline-block;
+}
+
+/*the next two classes are for footer social media icons*/
+/*twitter*/
+
+#block-imageblock-10{
+	width : 30px;
+	height : 30px;
+	display: inline-block;
+	float:right;
+	clear:none;
+	list-style-type:none;
+}
+
+/*facebook*/
+
+#block-imageblock-9{
+	width : 30px;
+	height : 30px;
+	display: inline-block;
+	float:right;
+	clear:none;
+	list-style-type:none;
+	margin-left: 1em;
+}
+
+.footerbg{
+	background-color: #181818;
+}
+
+
+/* removal of text decoration from enter button*/
+.block.block-block.contextual-links-region.block-4.block-block-4.odd.block-without-title{
+	text-decoration: none;
+	}
+
+	#block-block-4{
+		text-align: center;
+	}
+
+	#block-block-4 .content a {
+		text-decoration: none;
+	}
+
+	#block-block-4 .content a span {
+		margin: 0;
+	}
+
+
+/* Product Content Type */
+.node-product__main-image img {
+	width: 100%;
+	height: auto;
+}
+
+.node-product__thumbnail {
+	float: left;
+}
+
+.node-product__images {
+	display: block;
+	overflow: hidden;
+	clear: none;
+}
+
+.node-product__add-cart {
+	display: block;
+	margin: 1em 0;
+	background: black;
+	padding: 1em;
+	clear: none;
+}
+
+.node-product .form-type-select {
+	position: relative;
+}
+
+.node-product .form-type-select:after {
+	content: '▼';
+	display: inline;
+	margin-left: -23px;
+}
+
+.node-product .form-type-select select {
+	background: transparent;
+	color: #FFF;
+	font-weight: bold;
+	position: relative;
+}
+
+.node-product .attribute .form-type-radio {
+	display: inline-block;
+}
+
+.node-product .attribute .form-type-radio .form-radio {
+	display: none;
+}
+
+.node-product .attribute .form-type-radio label {
+	display: block;
+	width: 3em;
+	text-align: center;
+	border: 1px solid #FFF;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.node-product .attribute .form-type-radio .form-radio:checked + label {
+	background: white;
+	color: black;
+}
+
+.node-product .node-add-to-cart {
+	background: #181818;
+	border: none;
+	border-radius: 0;
+	padding: 1em 2em;
+	color: white;
+	text-decoration: none;
+	text-shadow: none;
+	font-size: 1.1em;
+	border: 1px solid transparent;
+}
+
+.node-product .node-add-to-cart:hover {
+	background: #181818;
+	border-color: white;
+}
+
+.node-product #wrap {
+	float: right !important;
+	margin: auto;
+}
