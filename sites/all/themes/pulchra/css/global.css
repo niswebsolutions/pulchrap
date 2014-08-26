@@ -2,7 +2,7 @@
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
 /* Typeography */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
 	color: white;
@@ -22,26 +22,8 @@ display:none;
 	margin-top: 5em;
 	margin-bottom: 5em;
 }
-/*the next two ID's are for the header social media icons */
-#block-imageblock-3 {
-    width : 30px; /* width here */
-    height : 30px; /* height here */
-    display: inline-block;
-	float:left;
-	clear:none;
-	list-style-type:none;
-	margin-left: 7em;
-	margin-right: 0.5em;
-}
 
-#block-imageblock-2{
-	width : 30px;
-	height : 30px;
-	display: inline-block;
-	float:left;
-	clear:none;
-	list-style-type:none;
-}
+
 
 
 
@@ -70,7 +52,8 @@ display:none;
 }
 
 .hero-text {
-	font-size: 6.8em;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 6em;
 	color:white;
 	display: block;
 	text-align: center;
@@ -110,14 +93,25 @@ display:none;
 	visibility: hidden;
 }
 
-.block.block-imageblock.contextual-links-region.block-8.even.block-without-title{
-	display:inline-block;
-	float: left;
+/*the next three ID's and classes are for the header social media icons */
+#block-imageblock-3 {
+    display: inline-block;
+	float:left;
+	margin-left: 7.7em;
 }
 
-.block.block-imageblock.contextual-links-region.block-6.even.block-without-title{
-	display:inline-block;
+#block-imageblock-6 {
+    display: inline-block;
+	float:left;
+	margin-left: 0.3em;
 }
+
+#block-imageblock-8 {
+    display: inline-block;
+	float:left;
+	
+}
+
 
 /*the next two classes are for footer social media icons*/
 /*twitter*/
@@ -143,10 +137,14 @@ display:none;
 	margin-left: 1em;
 }
 
-.footerbg{
+/*footers background Color*/
+#zone-footer-wrapper{
 	background-color: #181818;
+	width:100%;
+	position: relative;
+	margin-top: 4em;
+	margin-bottom: 2em;
 }
-
 
 /* removal of text decoration from enter button*/
 .block.block-block.contextual-links-region.block-4.block-block-4.odd.block-without-title{
@@ -249,4 +247,13 @@ display:none;
 .node-product #wrap {
 	float: right !important;
 	margin: auto;
+}
+
+/*store front view images*/
+
+.views-field.views-field-field-storeimage{
+	margin-right: 4.5em;
+	margin-left: 4.5em;
+	margin-bottom: 1.2em;
+	margin-top: 1.2em;
 }
