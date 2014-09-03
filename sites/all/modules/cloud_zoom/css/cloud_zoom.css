@@ -3,5 +3,14 @@
   z-index: 499 !important;
 }
 .cloud-zoom-gallery-thumbs {
-  clear:left;
-}
+  display: block;
+	max-width: 12em;
+	max-height: 75%;
+  float:right;
+  }
+
+  .cloud-zoom-gallery-thumbs img{
+
+  	margin-right: 0.5em;
+  	margin-bottom: 0.5em;
+  }

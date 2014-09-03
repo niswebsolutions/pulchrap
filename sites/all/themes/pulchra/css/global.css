@@ -2,7 +2,8 @@
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
 /* Typeography */
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Vidaloka);
+/*font-family: 'Vidaloka', serif;*/
 
 body {
 	color: white;
@@ -23,8 +24,15 @@ display:none;
 	margin-bottom: 5em;
 }
 
+/* unvisited link */
+a:link {
+    color: white;
+}
 
-
+/* visited link */
+a:visited {
+    color: white;
+}
 
 
 .block.block-block.contextual-links-region.block-1.block-block-1.odd.block-without-title{
@@ -52,7 +60,7 @@ display:none;
 }
 
 .hero-text {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Vidaloka', serif;
 	font-size: 6em;
 	color:white;
 	display: block;
@@ -96,19 +104,19 @@ display:none;
 /*the next three ID's and classes are for the header social media icons */
 #block-imageblock-3 {
     display: inline-block;
-	float:left;
+
 	margin-left: 7.7em;
 }
 
 #block-imageblock-6 {
     display: inline-block;
-	float:left;
+
 	margin-left: 0.3em;
 }
 
 #block-imageblock-8 {
     display: inline-block;
-	float:left;
+
 	
 }
 
@@ -123,6 +131,7 @@ display:none;
 	float:right;
 	clear:none;
 	list-style-type:none;
+	margin-top: 0.2em;
 }
 
 /*facebook*/
@@ -135,16 +144,21 @@ display:none;
 	clear:none;
 	list-style-type:none;
 	margin-left: 1em;
+	margin-top: 0.2em;
 }
 
 /*footers background Color*/
 #zone-footer-wrapper{
-	background-color: #181818;
-	width:100%;
 	position: relative;
+	bottom:0;
+	clear:all;
+	background-color: #181818;
+	height: 3em;
+	width:100%;
 	margin-top: 4em;
-	margin-bottom: 2em;
+	vertical-align:bottom !important;
 }
+
 
 /* removal of text decoration from enter button*/
 .block.block-block.contextual-links-region.block-4.block-block-4.odd.block-without-title{
@@ -182,10 +196,12 @@ display:none;
 
 .node-product__add-cart {
 	display: block;
-	margin: 1em 0;
+	margin: 0em 0em 0em 0.7em;
 	background: black;
 	padding: 1em;
 	clear: none;
+	height: 30.8em;
+	width:10em;
 }
 
 .node-product .form-type-select {
@@ -199,12 +215,11 @@ display:none;
 }
 
 .node-product .form-type-select select {
-	background: transparent;
+	background: transparent !important;
 	color: #FFF;
 	font-weight: bold;
 	position: relative;
 }
-
 .node-product .attribute .form-type-radio {
 	display: inline-block;
 }
@@ -215,20 +230,20 @@ display:none;
 
 .node-product .attribute .form-type-radio label {
 	display: block;
-	width: 3em;
+	width: 3.8em;
 	text-align: center;
-	border: 1px solid #FFF;
 	padding: 1em;
 	cursor: pointer;
+	background: #181818;
 }
 
 .node-product .attribute .form-type-radio .form-radio:checked + label {
-	background: white;
-	color: black;
+	background: #252525;
 }
 
 .node-product .node-add-to-cart {
-	background: #181818;
+	float:right;
+	background: #181818;`
 	border: none;
 	border-radius: 0;
 	padding: 1em 2em;
@@ -237,23 +252,127 @@ display:none;
 	text-shadow: none;
 	font-size: 1.1em;
 	border: 1px solid transparent;
+	margin-top: 13em;
+	margin-right: -5em;
+	clear:none;
 }
 
 .node-product .node-add-to-cart:hover {
 	background: #181818;
 	border-color: white;
 }
-
 .node-product #wrap {
 	float: right !important;
 	margin: auto;
 }
 
-/*store front view images*/
+.product-title{
+	font-size: 1.4em;
+}
+
+#wrap
+{
+	margin-right: 1em;
+}
+
+#uc-product-add-to-cart-form-8{
+	height: 26.7em;
+	display: block;
+	overflow: hidden;
+}
+
+/* some cloud zoom gallery css can be found in cloud_zoom.css */
+
+.views-field.views-field-title{
+	text-align: center;
+}
+
+
+
+.views-field.views-field-sell-price{
+	text-align: center;
+}
+
+/*store front views images*/
 
 .views-field.views-field-field-storeimage{
-	margin-right: 4.5em;
-	margin-left: 4.5em;
+	margin-right: 4em;
+	margin-left: 2em;
 	margin-bottom: 1.2em;
 	margin-top: 1.2em;
+}
+
+/*click image to enlarge*/
+
+.imagemagnifier{
+	width:17em;
+	float:right;
+	margin-top:-16em;
+	font-size: 0.6em;
+	display:inline;
+}
+
+
+#magnifying-glass
+{
+	display: inline-block;
+ width:1em;
+ clear:none;
+ font-size: 1.8em; /* This controls the size. */
+ display: inline-block;
+ width: 0.4em;
+ height: 0.4em;
+ border: 0.1em solid white;
+ position: relative;
+ border-radius: 0.35em;
+}
+
+#magnifying-glass::before
+{
+ content: "";
+ display: inline;
+ position: absolute;
+ right: -0.25em;
+ bottom: -0.1em;
+ border-width: 0;
+ background: white;
+ width: 0.35em;
+ height: 0.08em;
+ -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+
+/*video*/
+.videothumb{
+	display: block;
+	position: fixed;
+	top: 39em;
+	float:left;
+	height: 7.5em;
+	width: 12em;
+}
+
+.Enlarge{
+	position: fixed;
+	top: 46em;
+	display: block;
+	font-size: 0.8em;
+	float:left;
+}
+
+.display-price{
+	clear:none;
+	float: right;
+	margin-top: 14em;
+	margin-right: 2em;
+}
+
+.form-required{
+	visibility: hidden;
+}
+
+.comment-add.first.last{
+	visibility: hidden;
 }

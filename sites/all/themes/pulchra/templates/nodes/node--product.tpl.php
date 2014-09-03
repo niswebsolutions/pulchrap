@@ -80,21 +80,31 @@
  * @ingroup themeable
  */
 ?>
-<h1>Velvet Thong</h1>
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
   <?php print render($title_suffix); ?>
 
-
   <div class="content"<?php print $content_attributes; ?>>
+
     <div class="node-product__images">
       <?php print render($content['uc_product_image']); ?>
+      <span class="Enlarge">Click Image To Enlarge &nbsp;<span id="magnifying-glass"></span></span>
+    <div class="videothumb">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+      <img src="http://pulchra.local/sites/default/files/Youtube.png"></a>
     </div>
-
+  </div>
+    
+    <div class="contentbox"<?php print $content_attributes; ?>>
     <div class="node-product__add-cart">
+      <div class="product-title">
+      <?php print render($title); ?>
+      </div>
       <?php print render($content['display_price']); ?>
       <?php print render($content['add_to_cart']); ?>
+      
     </div>
 
     <div class="node-product__info">
@@ -110,4 +120,5 @@
 
   <?php print render($content['links']); ?>
   <?php print render($content['comments']); ?>
+</div>
 </div>
