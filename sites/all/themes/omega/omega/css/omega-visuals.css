@@ -164,6 +164,7 @@ tr.even td {
 
 tr.odd td {
   background: #fff;
+  color:black;
 }
 
 td.active {

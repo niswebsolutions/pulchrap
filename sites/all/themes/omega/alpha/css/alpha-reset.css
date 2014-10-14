@@ -124,3 +124,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+.html.not-front.logged-in.page-cart.page-cart-checkout.context-cart.admin-menu.omega-mediaqueries-processed.responsive-layout-normal{
+  overflow-y:scroll;
+}

@@ -5,6 +5,15 @@ Drupal.behaviors.cloudZoom = {
     if (items.length) {
       items.addClass('cloud-zoom-processed').CloudZoom();
       items.parent().css('float', 'left');
+
+$('.hover').mouseover(function() {
+  $('.text').css("visibility","visible");
+});
+
+$('.hover').mouseout(function() {
+  $('.text').css("visibility","hidden");
+});
+      
     }
   }
 };

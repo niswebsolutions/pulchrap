@@ -81,103 +81,21 @@
  */
 ?>
 
-<head>
-<SCRIPT TYPE="text/javascript">
-<!--
-function popup(mylink, windowname)
-{
-if (! window.focus)return true;
-var href;
-if (typeof(mylink) == 'string')
-   href=mylink;
-else
-   href=mylink.href;
-window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
-return false;
-}
 
 
-function popup2(mylink, windowname)
-{
-if (! window.focus)return true;
-var href;
-if (typeof(mylink) == 'string')
-   href=mylink;
-else
-   href=mylink.href;
-window.open(href, windowname, 'width=600,height=400,scrollbars=yes');
-return false;
-}
-//-->
-</SCRIPT>
-
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-</head>
-
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
-  <?php print render($title_prefix); ?>
-  <?php print render($title_suffix); ?>
-
-  <div class="content"<?php print $content_attributes; ?>>
-
-    <div class="node-product__images">
-      <?php print render($content['uc_product_image']); ?>
-  </div>
-    
-    <div class="contentbox"<?php print $content_attributes; ?>>
-    <div class="node-product__add-cart">
-      <div class="product-title">
-      <?php print render($title); ?>
-      </div>
-      <div class="fit">
-        <a href="http://pulchra.local/content/size-fit#" onClick="return popup(this, 'notes')">
-         Size &amp; Fit
-        </a>
-        </div>
-        <?php
-          print render($content);
-        ?>
-          <div class="videothumb">
-            <a href="https://docs.google.com/file/d/0B_P00KMcHAS3bVZZUmswX2s3cEU/edit?usp=docslist_api" target="_blank" onClick="return popup2(this, 'notes')">
-            <img src="http://pulchra.local/sites/default/files/hth-video.png"></a>
-          </div>
-      
-      <div class="cost"><span>price</span></div>
-      <?php print render($content['add_to_cart']); ?>
-    </div>
-
-    <div>
-        <?php print $fields['StoreImage']->content; ?>
-    </div>
-
-    <script>
-      $( "span" ).removeClass( "uc-price" );
-    </script>
-
-    <script>
-         $('.hover').mouseover(function() {
-  $('.text').css("visibility","visible");
-});
-
-$('.hover').mouseout(function() {
-  $('.text').css("visibility","hidden");
+<script>
+$("#toggle").click(function() {
+  $(this).toggleClass("on");
+  $("#menu").slideToggle();
 });
 </script>
 
-    <div class="node-product__info">
-      <?php
-        // We hide the comments and links now so that we can render them later.
-        hide($content['comments']);
-        hide($content['links']);
-        hide($content['uc_product_image']);
-      ?>
-    </div>
-  </div>
-
-  <?php print render($content['links']); ?>
-  <?php print render($content['comments']); ?>
+<div id="toggle">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
 </div>
+
+<div id="menu">
+  Hello, I'm a menu!
 </div>

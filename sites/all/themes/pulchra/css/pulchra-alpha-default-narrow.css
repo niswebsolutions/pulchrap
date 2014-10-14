@@ -26,4 +26,5 @@
 .node-product__info {
   display: block;
   clear: both;
+  margin:auto;
 }
